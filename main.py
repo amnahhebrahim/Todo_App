@@ -20,7 +20,6 @@ async def get_todos():
         return {"todo_id":todo.id, "todo_item": todo.Item}
         all_todos.append(todo.Item)
 
-
     session.commit()
 
 #get single todo:
