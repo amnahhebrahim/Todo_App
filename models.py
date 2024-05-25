@@ -14,4 +14,3 @@ class Todo(Base):
     __tablename__="notes"
     id: int
     item: str
-    date_created: datetime

@@ -15,7 +15,7 @@ Base= declarative_base()
 class Todo(Base): #inheret the Base
     __tablename__="todos"
     #columns:
-    id=Column(Integer, primary_key=True)
+    id=Column(Integer, primary_key=True, index= True)
     Item=Column(String)
 
 Base.metadata.create_all(engine)
